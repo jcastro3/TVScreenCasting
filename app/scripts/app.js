@@ -4,26 +4,22 @@ angular
   .module('nearsofProyectApp', [
     'ngCookies',
     'ngResource',
-    'ngRoute'
+    'ngRoute',
+    'ui.bootstrap'
   ])
   .config(function ($routeProvider) {
-    $routeProvider
-      .when('/', {
+    $routeProvider.
+      when('/main', {
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
-      });
-    $routeProvider
-      .when('/slider', {
+      }).
+      when('/slider', {
         templateUrl: 'views/slider.html',
         controller: 'SlideCtrl'
+      }).
+      otherwise({
+        redirectTo: '/main'
       });
-    $routeProvider
-      .when('/slides', {
-        templateUrl: 'views/admin.html',
-        controller: 'MainCtrl'
-      });
-    $routeProvider
-      .otherwise({
-        redirectTo: '/'
-      });
+
+
   });
