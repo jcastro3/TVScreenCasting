@@ -1,0 +1,62 @@
+.SevenG, .NsSlide{
+	height: 1080px;/* this will be removed later on*/
+	font-weight: 800;
+	color: #fff;
+}
+
+.NsSlide{
+	background-color: orange;
+	width: 75%;
+	margin: 0;
+	padding: 0;
+}
+
+.header{
+	background-color: #ddd;
+
+
+}
+.SevenG {
+	background-color: gray;
+	background-image: url('../images/7geese_mock.png') ;
+	border-right: 3px gray solid;
+
+}
+
+.logo_slide {
+	float: right;
+	width:60px; 
+  	height:60px;
+  	margin-right: 20px;
+}
+
+h1{
+	font-family: 'Montserrat', sans-serif;
+	text-shadow: 1px 1px 1px #C2C2C2;
+}
+
+.container {
+	
+    margin-top: 70px;
+    text-align: center;
+}
+
+.slide_text{
+	background-color: #EC8E00;
+	border-radius: 10px;
+	padding: 20px;
+	font-size: 25px;
+	font-family: 'Raleway', sans-serif;
+
+}
+p{
+	text-align: justify;
+}
+
+img {
+	width: 250px;
+	height: 250px;
+	margin-bottom: 10px;
+	
+}
+

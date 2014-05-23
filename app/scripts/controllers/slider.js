@@ -10,7 +10,6 @@ angular.module('nearsofProyectApp')
 	$scope.addSlide = function() {
 		var newWidth = 1900 + slides.length;
 		slides.push({
-			image: 'http://placekitten.com/' + newWidth + '/1080',
 			text: ['More','Extra','Lots of','Surplus'][slides.length % 4] + ' ' +
 			['Cats', 'Kittys', 'Felines', 'Cutes'][slides.length % 4]
 		});
