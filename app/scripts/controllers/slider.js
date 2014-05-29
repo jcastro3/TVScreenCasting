@@ -6,12 +6,15 @@
 angular.module('nearsofProyectApp')
     .controller('SlideCtrl', function ($scope) {
 	$scope.myInterval = 5000;
-	var slides = $scope.slides = [];
+	$scope.slides = [];
 	$scope.addSlide = function() {
-		var newWidth = 1900 + slides.length;
-		slides.push({
-			text: ['More','Extra','Lots of','Surplus'][slides.length % 4] + ' ' +
-			['Cats', 'Kittys', 'Felines', 'Cutes'][slides.length % 4]
+		//var newWidth = 1170 + slides.length;
+		$scope.slides.push(
+		{
+			slideshow: '../views/slides/slide1.html'
+		},
+		{
+			slideshow: '../views/slides/slide2.html'
 		});
 	};
 
@@ -19,3 +22,4 @@ angular.module('nearsofProyectApp')
 		$scope.addSlide();
 	}
 });
+
