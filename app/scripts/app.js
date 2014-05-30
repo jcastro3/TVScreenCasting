@@ -21,8 +21,8 @@ angular
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       }).
-      when('/slide2', {
-        templateUrl: 'views/slide2.html',
+      when('/slideshow', {
+        templateUrl: 'views/slideshow.html',
         controller: 'SlideCtrl'
       }).
       otherwise({

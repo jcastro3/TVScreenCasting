@@ -1,4 +1,4 @@
-<nav class="admin-nav navbar-static-top" role="navigation" style=""><h2 class="ad-title">TVCasting Slideshow Maker <img src="../images/ns.png" style="float:right; position:relative; bottom:15px; width:160px; right:20px;"></h2>
+<nav class="admin-nav navbar-static-top" role="navigation" style=""><h2 class="ad-title">TVCasting Slideshow Maker <img class="nslogo" src="../images/ns.png" style="float:right; position:relative; bottom:15px; width:160px; right:20px;"></h2>
 </nav>
 
 <div class="admin-container">
@@ -8,8 +8,12 @@
 			<textarea class="form-control" rows="3" placeholder="1st Paragraph" ng-model="paragraph1"></textarea>
 			<textarea class="form-control" rows="3" placeholder="2st Paragraph" ng-model="paragraph2"></textarea>
 			<input type="file">
+			<button type="submit" class="btn btn-success" ng-click="verify('/slideshow')">View Slideshow</button>
+
 		</div>
 		<div class="col-xs-12 col-md-8 slideView">
+
+
 			<div class="row">
 				<div id="lines" class="col-md1 Slideshow">
 					<nav class="navbar title navbar-static-top" role="navigation">
@@ -17,7 +21,6 @@
 							<img class="img-circle img-responsive ns_logo" src="../images/nearsoft.png">
 						</h1>
 					</nav>	
-
 					<!-- content begins here -->
 					<div class="row" style="margin:20px; padding:20px;" align="center">
 						<div class="slide_text col-xs-12 col-md-8">
@@ -25,24 +28,23 @@
 								<span id="bullets" class="glyphicon glyphicon-record"></span>
 								{{paragraph1}}
 							</p>
-		
+
 							<p>
 								<span id="bullets" class="glyphicon glyphicon-record"></span>
 								{{paragraph2}}
-							
-							
-						</div>
-						<!-- slideshow images -->
-						<div class="col-xs-6 col-md-4">
-							<div class="img">
-								<img src="" class=" img2 img-thumbnail">
+
+
 							</div>
-						</div>		
-					</div>
-					<!-- content ends here -->
+							<!-- slideshow images -->
+							<div class="col-xs-6 col-md-4">
+								<div class="img">
+									<img src="" class=" img2 img-thumbnail">
+								</div>
+							</div>		
+						</div>
+						<!-- content ends here -->
+					</div>		
 				</div>
 			</div>
-
 		</div>
 	</div>
-</div>
