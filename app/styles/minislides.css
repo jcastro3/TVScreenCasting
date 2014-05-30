@@ -1,0 +1,94 @@
+
+.admin-container{
+	margin: 50px 80px 0 80px;
+
+}
+
+.admin-nav{
+	border-bottom: 3px solid #FF9E71;
+}
+.Slideshow{
+	margin: 0;
+	padding: 0;
+	font-weight: 800;
+	color: #fff;
+}
+
+.ad-title{
+	font-size: 30px;
+	color: #78787E;
+	font-family: 'Montserrat', sans-serif;
+	text-shadow: 1px 1px 1px #C2C2C2;
+}
+
+.title{
+	background-color: #ddd;
+}
+.txt-title{
+	font-size: 30px;
+}
+/*.SevenG {
+	background-color: gray;
+	background-image: url('../images/7geese_mock.png');
+	border-right: 3px gray solid;
+
+}*/
+
+.ns_logo {
+	float: right;
+	position: relative;
+	width: 40px;
+	right: 20px;
+	bottom: 10px;
+}
+
+h1{
+	font-family: 'Montserrat', sans-serif;
+	text-shadow: 1px 1px 1px #C2C2C2;
+}
+
+
+.slide_text{
+	background-color: #FCFCFC;
+	border-radius: 15px;
+	padding: 50px;
+	font-size: 20px;
+	font-family: 'Raleway', sans-serif;
+	box-shadow: -2px 8px 28px #613D1C;
+	color: #363636;
+}
+
+p{
+	text-align: justify;
+}
+
+.img2{
+	width: 220px;
+	height: 210px;
+}
+.navbar{
+	border-bottom: thick solid #F60;
+
+}
+
+#bullets{
+	color:#DB8247;
+	font-size:15px;
+	margin-right:20px; 
+}
+
+input{
+	margin: 10px;
+}
+
+
+textarea{
+	margin: 10px;
+}
+
+.slideView{
+	width: 55%;
+	margin-left:100px;
+	border-radius: 10px;
+	background-color: orange;
+}

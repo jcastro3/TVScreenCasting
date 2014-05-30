@@ -1,34 +1,48 @@
-<div class="row">
-<!-- <div class=" SevenG col-xs-6 col-md-3"> 7GEESE PLUGIN
-</div> -->
-	<div id="lines" class="col-md1 NsSlide">
-		<nav class="navbar header navbar-static-top" role="navigation" style="min-height:82px">
-			<h1 align="center">Nearsoft Slideshow
-				<img class="img-circle img-responsive logo_slide" src="../images/nearsoft.png">
-			</h1>
-		</nav>	
+<nav class="admin-nav navbar-static-top" role="navigation" style=""><h2 class="ad-title">TVCasting Slideshow Maker <img src="../images/ns.png" style="float:right; position:relative; bottom:15px; width:160px; right:20px;"></h2>
+</nav>
 
-		<!-- content begins here -->
-		<div class="row" style="margin:20px; padding:20px;" align="center">
-			<div class="slide_text col-xs-12 col-md-8">
-				<p><span id="bullets" class="glyphicon glyphicon-record"></span>Que onda gente, recuerden hoy gran carne asada  pago de derecho a piso, o para otros feria reclutamiento de TIEMPO, el cual podría ser pero no esta enfocado a eso simplemente a conocerlos y que nos conozcan, y por supuesto disfrutar la carne asada.</p>
-				<br>
-				<p><span id="bullets" class="glyphicon glyphicon-record"></span>Yo inicie preparar las cosas después de las 4:30, posiblemente la gente llegue entre 5 y 6. Espero contar con su presencia y apoyo. Ah claro que no se tiene que realizar pago alguno, ya que algunos han preguntando de cuanto nos toca. Saludos y disfruten.
-				</p>
-				<br>
-				<br>
-				<p>Raul Rodriguez.</p>
-			</div>
-			<!-- slideshow images -->
-			<div class="col-xs-6 col-md-4">
-				<div class="img1">
-					<img  src="../images/food.jpg" class="img-circle">
-				</div>
-				<div class="img2">
-					<img src="../images/food2.jpg" class="img-thumbnail">
-				</div>
-			</div>		
+<div class="admin-container">
+	<div class="row">
+		<div class="col-xs-6 col-md-4">
+			<input type="text" class="form-control" placeholder="Title" ng-model="slideTitle">
+			<textarea class="form-control" rows="3" placeholder="1st Paragraph" ng-model="paragraph1"></textarea>
+			<textarea class="form-control" rows="3" placeholder="2st Paragraph" ng-model="paragraph2"></textarea>
+			<input type="file">
 		</div>
-		<!-- content ends here -->
+		<div class="col-xs-12 col-md-8 slideView">
+			<div class="row">
+				<div id="lines" class="col-md1 Slideshow">
+					<nav class="navbar title navbar-static-top" role="navigation">
+						<h1 align="center" class="txt-title">{{slideTitle}}
+							<img class="img-circle img-responsive ns_logo" src="../images/nearsoft.png">
+						</h1>
+					</nav>	
+
+					<!-- content begins here -->
+					<div class="row" style="margin:20px; padding:20px;" align="center">
+						<div class="slide_text col-xs-12 col-md-8">
+							<p>
+								<span id="bullets" class="glyphicon glyphicon-record"></span>
+								{{paragraph1}}
+							</p>
+		
+							<p>
+								<span id="bullets" class="glyphicon glyphicon-record"></span>
+								{{paragraph2}}
+							
+							
+						</div>
+						<!-- slideshow images -->
+						<div class="col-xs-6 col-md-4">
+							<div class="img">
+								<img src="" class=" img2 img-thumbnail">
+							</div>
+						</div>		
+					</div>
+					<!-- content ends here -->
+				</div>
+			</div>
+
+		</div>
 	</div>
 </div>
