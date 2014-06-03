@@ -11,7 +11,7 @@ angular
     $routeProvider.
       when('/admin', {
         templateUrl: 'views/admin.html',
-        controller: 'MainCtrl'
+        controller: 'adminSlideshow'
       }).
       when('/slider', {
         templateUrl: 'views/slider.html',

@@ -1,12 +1,9 @@
 'use strict';
 
 angular.module('nearsofProyectApp')
-  .controller('MainCtrl', function ($scope, $location) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('adminSlideshow', function ($scope, $location, $resource) {
+    
+    $scope.data = $resource('../api/');
 
 		$scope.verify = function(url){
 			$location.path(url);

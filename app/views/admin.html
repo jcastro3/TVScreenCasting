@@ -1,16 +1,19 @@
-<nav class="admin-nav navbar-static-top" role="navigation" style=""><h2 class="ad-title">TVCasting Slideshow Maker <img class="nslogo" src="../images/ns.png" style="float:right; position:relative; bottom:15px; width:160px; right:20px;"></h2>
+<nav class="admin-nav navbar-static-top" role="navigation" style="">
+	<h2 class="ad-title">TVCasting Slideshow Maker 
+		<img class="nslogo" src="../images/ns.png" style="float:right; position:relative; bottom:15px; width:160px; right:20px;">
+	</h2>
 </nav>
 
-<div class="admin-container">
+<div class="admin-container" ng-controller="adminSlideshow">
 	<div class="row">
-		<div class="col-xs-6 col-md-4">
+		<form novalidate role="form"  class="col-xs-6 col-md-4">
 			<input type="text" class="form-control" placeholder="Title" ng-model="slideTitle">
 			<textarea class="form-control" rows="3" placeholder="1st Paragraph" ng-model="paragraph1"></textarea>
 			<textarea class="form-control" rows="3" placeholder="2st Paragraph" ng-model="paragraph2"></textarea>
 			<input type="file">
 			<button type="submit" class="btn btn-success" ng-click="verify('/slideshow')">View Slideshow</button>
 
-		</div>
+		</form>
 		<div class="col-xs-12 col-md-8 slideView">
 
 
