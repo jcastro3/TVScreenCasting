@@ -1,0 +1,40 @@
+.login-nav{
+	-webkit-box-shadow: 0 7px 9px -8px #777BAF;
+	-moz-box-shadow: 0 7px 9px -8px #777BAF;
+	box-shadow: 0 7px 9px -8px #777BAF;
+	margin: auto;
+	border-bottom: 1px rgb(224, 224, 224);
+	z-index: 1;
+}
+
+.login-nav img{
+	padding: 10px 0  10px 10px;
+}
+
+.log-container{
+	background: #EEEEEE;
+	min-height: 100%;
+  	min-width: 100%;
+  	position: fixed;
+
+}
+
+.log-h1{
+	color:white; 
+	text-align:center;
+	margin-top: 75px;
+	text-shadow: 1px 1px 1px #5A5A5A;
+}
+
+.g-plus{
+	width: 120px;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 70px;
+}
+
+.msg{
+	color: #ccc;
+	text-align: center;
+}

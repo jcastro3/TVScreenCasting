@@ -19,8 +19,16 @@
     <link rel="stylesheet" href="styles/slideshow.css">
     <link rel="stylesheet" href="styles/admin.css">
     <link rel="stylesheet" href="styles/minislides.css">
+    <link rel="stylesheet" href="styles/login.css">
     <link href='http://fonts.googleapis.com/css?family=Raleway|Montserrat' rel='stylesheet' type='text/css'>    <!-- endbuild -->
   </head>
+    <script type="text/javascript">
+      (function() {
+       var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+       po.src = 'https://apis.google.com/js/client:plusone.js';
+       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+     })();
+    </script>
   <body ng-app="nearsofProyectApp">
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -29,13 +37,9 @@
     <!-- Add your site or application content here -->
     <div  ng-view=""></div>
 
-
-
-
-
-
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
+    <script src="https://cdn.firebase.com/js/client/1.0.15/firebase.js"></script>
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/es5-shim/es5-shim.js"></script>
     <script src="bower_components/angular/angular.js"></script>
@@ -45,12 +49,15 @@
     <script src="bower_components/angular-cookies/angular-cookies.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+
     <!-- endbower -->
     <!-- endbuild -->
-
+    <!-- angularfire --> 
+    <script src="https://cdn.firebase.com/libs/angularfire/0.7.1/angularfire.min.js"></script>
+    <script src="https://cdn.firebase.com/js/client/1.0.15/firebase.js"></script>
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
-        <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/controllers/admin.js"></script>
         <script src="scripts/controllers/login.js"></script>
         <script src="scripts/controllers/slider.js"></script>
         <!-- endbuild -->

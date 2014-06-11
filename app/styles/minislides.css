@@ -12,6 +12,7 @@
 	padding: 0;
 	font-weight: 800;
 	color: #fff;
+	min-height: 400px;
 }
 
 .ad-title{
@@ -48,13 +49,13 @@ h1{
 }
 
 
-.slide_text{
+.slide-text-container{
 	background-color: #FCFCFC;
 	border-radius: 15px;
 	padding: 50px;
 	font-size: 20px;
 	font-family: 'Raleway', sans-serif;
-	box-shadow: -2px 8px 28px #613D1C;
+	box-shadow: 4px 3px 3px #DA904C;
 	color: #363636;
 }
 
@@ -63,8 +64,10 @@ p{
 }
 
 .img2{
-	width: 220px;
-	height: 210px;
+	margin-top: auto;
+	margin-bottom: auto;
+	width: 200px;
+	height: 200px;
 }
 .navbar{
 	border-bottom: thick solid #F60;

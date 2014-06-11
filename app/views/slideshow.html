@@ -1,21 +1,21 @@
 
+<style type="text/css" href="../styles/slideshow.css"></style>
 
-<div ng-controller="SlideCtrl" class="carousel">
-  <div class="item">
-    <carousel interval="myInterval">
-      <slide ng-repeat="slide in slides" active="slide.active">
-        <div  class ="slide-container" ng-include src="slide.slideshow"></div>
-        </div>
-      </slide>
-    </carousel>
-  </div>
+<div  class="carousel" ng-controller="SlideCtrl">
+<div class="item">
+  <carousel interval="myInterval">
+  <slide ng-repeat="slide in slides" active="slide.active">
+    <div  class ="slide-container" ng-include src="slide.slideshow"></div>
+  </slide>
+  </carousel>
+</div>
 <!--   <div class="row">
-    <div class="col-md-6">
-      <button type="button" class="btn btn-info" ng-click="addSlide()">Add Slide</button>
-    </div>
-    <div class="col-md-6">
-      Interval, in milliseconds: <input type="number" class="form-control" ng-model="myInterval">
-      <br />Enter a negative number to stop the interval.
-    </div>-->
+<div class="col-md-6">
+<button type="button" class="btn btn-info" ng-click="addSlide()">Add Slide</button>
+</div>
+<div class="col-md-6">
+Interval, in milliseconds: <input type="number" class="form-control" ng-model="myInterval">
+<br />Enter a negative number to stop the interval.
+</div>-->
 </div>
 

@@ -1,25 +1,34 @@
 /**
  * Created by jcastro on 5/20/2014.
  */
-'use strict';
-
+ 'use strict';
 angular.module('nearsofProyectApp')
-    .controller('SlideCtrl', function ($scope) {
-	$scope.myInterval = 5000;
+.controller('SlideCtrl', function ($scope, $firebase, FIREBASE_URL) {
+	$scope.myInterval = 3000;
+	var flag = true;
 	$scope.slides = [];
-	$scope.addSlide = function() {
-		//var newWidth = 1170 + slides.length;
-		$scope.slides.push(
-		{
-			slideshow: '../views/slides/slide1.html'
-		},
-		{
-			slideshow: '../views/slides/slide2.html'
-		});
-	};
+	$scope.slidedata = [];
+	var fireRef = new Firebase(FIREBASE_URL);
 
-	for (var i=0; i<4; i++) {
-		$scope.addSlide();
-	}
+	// TODO need to reset the array after a new element is added to the slideshow.
+
+	fireRef.on('value', function(snapshot){
+		if(flag){
+			$scope.slides = [];
+		}
+		$scope.slidedata = snapshot.val();
+		console.log($scope.slidedata);
+		angular.forEach($scope.slidedata, function(value){
+			$scope.slides.push({
+				slideshow: '../views/slide_templates/slide1.html',
+				title: value.title,
+				p1: value.paragraph1,
+				p2: value.paragraph2
+			});
+		});
+
+
+	});
+
 });
 

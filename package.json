@@ -30,13 +30,14 @@
     "karma-ng-scenario": "^0.1.0",
     "karma": "^0.12.16",
     "grunt-karma": "^0.8.3",
-    "yeoman": "~0.9.1"
+    "yeoman": "~0.9.1",
+    "karma-chrome-launcher": "latest",
+    "karma-jasmine": "^0.1.5"
   },
   "engines": {
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "grunt test",
     "test": "node_modules/.bin/yeoman test --verbose"
   }
 }
