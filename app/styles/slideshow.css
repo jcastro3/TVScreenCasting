@@ -36,13 +36,13 @@ body .slide-container{
 
 }
 h1{
-	font-size: 68px;
+	font-size: 95px;
 }
 .logo_slide {
 	float: right;
 	position: relative;
-	width: 70px;
-	height: 70px;
+	width: 100px;
+	height: 100px;
 	right: 20px;
 }
 
@@ -51,12 +51,13 @@ h1{
 	text-shadow: 1px 1px 1px #C2C2C2;
 }
 
-
-.slide-text-container{
+/*this does not change the font*/
+.text-container{
 	background-color: #FCFCFC;
 	border-radius: 15px;
+	font-size: 45px;
+	font-weight: 800;
 	padding: 50px;
-	font-size: 30px;
 	font-family: 'Raleway', sans-serif;
 	box-shadow: 4px 3px 3px #DA904C;
 	color: #363636;
@@ -75,6 +76,6 @@ p{
 
 #bullets{
 	color:#DB8247;
-	font-size:25px;
+	font-size:35px;
 	margin-right:25px; 
 }

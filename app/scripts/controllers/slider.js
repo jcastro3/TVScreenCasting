@@ -1,7 +1,7 @@
 /**
  * Created by jcastro on 5/20/2014.
  */
- 'use strict';
+'use strict';
 angular.module('nearsofProyectApp')
 .controller('SlideCtrl', function ($scope, $firebase, FIREBASE_URL) {
 	$scope.myInterval = 3000;
@@ -23,12 +23,12 @@ angular.module('nearsofProyectApp')
 				slideshow: '../views/slide_templates/slide1.html',
 				title: value.title,
 				p1: value.paragraph1,
-				p2: value.paragraph2
+				p2: value.paragraph2,
+				img: value.img
 			});
 		});
-
-
 	});
+
 
 });
 

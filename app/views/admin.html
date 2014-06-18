@@ -1,5 +1,9 @@
 
-
+<script type="text/javascript">
+		var filePayload = "";
+	    document.getElementById("file-upload").addEventListener('change', handleFileSelect, false);
+	    
+</script>
 <!-- make this a directive -->
 <nav class="login-nav navbar" role="navigation" style="min-height:82px">
     <img class="img-responsive nearsoft" src="../images/ns.png" >
@@ -11,10 +15,18 @@
 			<input type="text" class="form-control" placeholder="Title" ng-model="slide.title">
 			<textarea class="form-control" rows="3" placeholder="1st Paragraph" ng-model="slide.p1"></textarea>
 			<textarea class="form-control" rows="3" placeholder="2st Paragraph" ng-model="slide.p2"></textarea>
-			<input type="file">
+			<div id="body">
+			<div id="spin"></div>
+			<input class="" type="file" accept="image/*" capture="camera" id="file-upload">
+			<br/>
+			
+		</div>
 			<button type="submit" class=" slide-btn btn btn-success" ng-click="newSlide()">Create Slide</button>
-
+			
 		</form>
+
+		
+
 		<div class="col-xs-12 col-md-8 slideView">
 
 
@@ -43,7 +55,7 @@
 							<!-- slideshow images -->
 							<div class="col-xs-6 col-md-4">
 								<div class="img">
-									<img src="" class=" img2 img-thumbnail">
+									<img src="" id="pano" class=" img2 img-thumbnail"> <img class="pano" id="pano" />
 								</div>
 							</div>		
 						</div>
